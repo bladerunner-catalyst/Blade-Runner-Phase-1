@@ -1,0 +1,598 @@
+{
+    "SIMData": {
+        "_type": "RiftVNF",
+        "_id": "c14dae6d-ce79-4f31-8075-bc6160a1eac3",
+        "id": "c14dae6d-ce79-4f31-8075-bc6160a1eac3",
+        "displayName": "FortiGate_vnfd",
+        "orchestratorType": "Rift",
+        "vnfVendor": "Fortigate",
+        "alarm": {
+            "analytics": {
+                "analytics": [{
+                    "alarmType": "endToEndDelayAvg#avgJitter-triggered-scale-in",
+                    "alarmName": "endToEndDelayAvg#avgJitter-triggered-scale-in:FGVM020000136248",
+                    "severityMappingId": "analytics"
+                }, {
+                    "alarmType": "endToEndDelayAvg#avgJitter-triggered-scale-out",
+                    "alarmName": "endToEndDelayAvg#avgJitter-triggered-scale-out:FGVM020000136248",
+                    "severityMappingId": "analytics"
+                }, {
+                    "alarmType": "snmp_count_session#session-count-triggered-scale-in",
+                    "alarmName": "snmp_count_session#session-count-triggered-scale-in:FGVM020000136248",
+                    "severityMappingId": "analytics"
+                }, {
+                    "alarmType": "snmp_count_session#session-count-triggered-scale-out",
+                    "alarmName": "snmp_count_session#session-count-triggered-scale-out:FGVM020000136248",
+                    "severityMappingId": "analytics"
+                }]
+            }
+        },
+        "charts": [{
+            "template-id": "graph-template-2",
+            "measurements": {
+                "endToEndDelayAvg": "FGVM020000136248"
+            }
+        }, {
+            "template-id": "graph-template-1",
+            "measurements": {
+                "snmp_count_session": "FGVM020000136248"
+            }
+        }]
+    }
+
+    ,
+    "TCAMeasurements": [{
+        "_type": "TCAMeasurement",
+        "_id": "FGVM020000136248-endToEndDelayAvg",
+        "queryId": "FGVM020000136248",
+        "id": "FGVM020000136248-endToEndDelayAvg",
+        "tca": [{
+            "type": "avgJitter-triggered-scale-in",
+            "hold-on-period": "2",
+            "hold-off-period": "4",
+            "critical-threshold": null,
+            "major-threshold": null,
+            "minor-threshold": "1000",
+            "direction": "over",
+            "alarm-augmentation": {
+                "ns-instance-config-ref": "2bb1ed64-b2d1-4ebe-903f-ed00157cdf4d",
+                "scaling-group-record": [{
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["c7ff31c2-641c-4b17-9cf4-7e42d64b7bda"]
+                    }],
+                    "scaling-group-name-ref": "http_client_group"
+                }, {
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["d40827cb-7dce-497f-8a52-28165d9e10cd", "c14dae6d-ce79-4f31-8075-bc6160a1eac3"]
+                    }],
+                    "scaling-group-name-ref": "FGT-HTTPServer-group"
+                }, {
+                    "scaling-group-name-ref": "httpd_group"
+                }],
+                "scaling-group-name-ref": "FGT-HTTPServer-group",
+                "notification": "+16132972926",
+                "severityDetails": {
+                    "MINOR": {
+                        "value": 1000,
+                        "actions": [{
+                            "name": "scale-in",
+                            "threshold-adjustment": 0
+                        }]
+                    }
+                }
+            }
+        }, {
+            "type": "avgJitter-triggered-scale-out",
+            "hold-on-period": "2",
+            "hold-off-period": "4",
+            "critical-threshold": "20000",
+            "major-threshold": null,
+            "minor-threshold": null,
+            "direction": "over",
+            "alarm-augmentation": {
+                "ns-instance-config-ref": "2bb1ed64-b2d1-4ebe-903f-ed00157cdf4d",
+                "scaling-group-record": [{
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["c7ff31c2-641c-4b17-9cf4-7e42d64b7bda"]
+                    }],
+                    "scaling-group-name-ref": "http_client_group"
+                }, {
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["d40827cb-7dce-497f-8a52-28165d9e10cd", "c14dae6d-ce79-4f31-8075-bc6160a1eac3"]
+                    }],
+                    "scaling-group-name-ref": "FGT-HTTPServer-group"
+                }, {
+                    "scaling-group-name-ref": "httpd_group"
+                }],
+                "scaling-group-name-ref": "FGT-HTTPServer-group",
+                "notification": "+16132972926",
+                "severityDetails": {
+                    "CRITICAL": {
+                        "value": 20000,
+                        "actions": [{
+                            "name": "scale-out",
+                            "threshold-adjustment": 0
+                        }]
+                    }
+                }
+            }
+        }],
+        "tcaAlarm": [{
+            "alarmType": "endToEndDelayAvg#avgJitter-triggered-scale-in",
+            "alarmName": "endToEndDelayAvg#avgJitter-triggered-scale-in:FGVM020000136248",
+            "severityMappingId": "analytics"
+        }, {
+            "alarmType": "endToEndDelayAvg#avgJitter-triggered-scale-out",
+            "alarmName": "endToEndDelayAvg#avgJitter-triggered-scale-out:FGVM020000136248",
+            "severityMappingId": "analytics"
+        }],
+        "chart": {
+            "template-id": "graph-template-2",
+            "measurements": {
+                "endToEndDelayAvg": "FGVM020000136248"
+            }
+        }
+    }, {
+        "_type": "TCAMeasurement",
+        "_id": "FGVM020000136248-snmp_count_session",
+        "queryId": "FGVM020000136248",
+        "id": "FGVM020000136248-snmp_count_session",
+        "tca": [{
+            "type": "session-count-triggered-scale-in",
+            "hold-on-period": "2",
+            "hold-off-period": "4",
+            "critical-threshold": null,
+            "major-threshold": null,
+            "minor-threshold": "20",
+            "direction": "over",
+            "alarm-augmentation": {
+                "ns-instance-config-ref": "2bb1ed64-b2d1-4ebe-903f-ed00157cdf4d",
+                "scaling-group-record": [{
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["c7ff31c2-641c-4b17-9cf4-7e42d64b7bda"]
+                    }],
+                    "scaling-group-name-ref": "http_client_group"
+                }, {
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["d40827cb-7dce-497f-8a52-28165d9e10cd", "c14dae6d-ce79-4f31-8075-bc6160a1eac3"]
+                    }],
+                    "scaling-group-name-ref": "FGT-HTTPServer-group"
+                }, {
+                    "scaling-group-name-ref": "httpd_group"
+                }],
+                "scaling-group-name-ref": "FGT-HTTPServer-group",
+                "notification": "+16132972926",
+                "severityDetails": {
+                    "MINOR": {
+                        "value": 20,
+                        "actions": [{
+                            "name": "scale-in",
+                            "threshold-adjustment": -100
+                        }]
+                    }
+                }
+            }
+        }, {
+            "type": "session-count-triggered-scale-out",
+            "hold-on-period": "2",
+            "hold-off-period": "4",
+            "critical-threshold": "100",
+            "major-threshold": null,
+            "minor-threshold": null,
+            "direction": "over",
+            "alarm-augmentation": {
+                "ns-instance-config-ref": "2bb1ed64-b2d1-4ebe-903f-ed00157cdf4d",
+                "scaling-group-record": [{
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["c7ff31c2-641c-4b17-9cf4-7e42d64b7bda"]
+                    }],
+                    "scaling-group-name-ref": "http_client_group"
+                }, {
+                    "instance": [{
+                        "config-status": "configured",
+                        "create-time": 1523989821,
+                        "instance-id": 0,
+                        "is-default": "true",
+                        "op-status": "running",
+                        "vnfrs": ["d40827cb-7dce-497f-8a52-28165d9e10cd", "c14dae6d-ce79-4f31-8075-bc6160a1eac3"]
+                    }],
+                    "scaling-group-name-ref": "FGT-HTTPServer-group"
+                }, {
+                    "scaling-group-name-ref": "httpd_group"
+                }],
+                "scaling-group-name-ref": "FGT-HTTPServer-group",
+                "notification": "+16132972926",
+                "severityDetails": {
+                    "CRITICAL": {
+                        "value": 100,
+                        "actions": [{
+                            "name": "scale-out",
+                            "threshold-adjustment": 100
+                        }]
+                    }
+                }
+            }
+        }],
+        "tcaAlarm": [{
+            "alarmType": "snmp_count_session#session-count-triggered-scale-in",
+            "alarmName": "snmp_count_session#session-count-triggered-scale-in:FGVM020000136248",
+            "severityMappingId": "analytics"
+        }, {
+            "alarmType": "snmp_count_session#session-count-triggered-scale-out",
+            "alarmName": "snmp_count_session#session-count-triggered-scale-out:FGVM020000136248",
+            "severityMappingId": "analytics"
+        }],
+        "chart": {
+            "template-id": "graph-template-1",
+            "measurements": {
+                "snmp_count_session": "FGVM020000136248"
+            }
+        }
+    }]
+
+    ,
+    "MonitoringParam": [{
+        "group-tag": "group1",
+        "id": "monitoring-param-FGSessionCount",
+        "json-query-method": "NAMEKEY",
+        "name": "snmp_count_session",
+        "rw-vnfr:data-source-ref": "data-source-collectd-for-vnf",
+        "units": "sessions",
+        "value-type": "INT",
+        "widget-type": "COUNTER"
+    }, {
+        "id": "monitoring-param-avgJitter",
+        "json-query-method": "NAMEKEY",
+        "name": "endToEndDelayAvg",
+        "rw-vnfr:data-source-ref": "data-source-collectd-for-vnf",
+        "units": "msecs",
+        "value-type": "INT",
+        "widget-type": "COUNTER"
+    }]
+
+    ,
+    "TcaPolicy": [{
+        "hold-off-for-n-samples": 4,
+        "hold-on-for-n-samples": 2,
+        "id": "avgJitter-triggered-scale-in",
+        "monitoring-param-ref": "monitoring-param-avgJitter",
+        "threshold": [{
+            "action": [{
+                "name": "scale-in",
+                "threshold-adjustment": 0
+            }],
+            "severity": "MINOR",
+            "value": 1000
+        }]
+    }, {
+        "hold-off-for-n-samples": 4,
+        "hold-on-for-n-samples": 2,
+        "id": "avgJitter-triggered-scale-out",
+        "monitoring-param-ref": "monitoring-param-avgJitter",
+        "threshold": [{
+            "action": [{
+                "name": "scale-out",
+                "threshold-adjustment": 0
+            }],
+            "severity": "CRITICAL",
+            "value": 20000
+        }]
+    }, {
+        "hold-off-for-n-samples": 4,
+        "hold-on-for-n-samples": 2,
+        "id": "session-count-triggered-scale-in",
+        "monitoring-param-ref": "monitoring-param-FGSessionCount",
+        "threshold": [{
+            "action": [{
+                "name": "scale-in",
+                "threshold-adjustment": -100
+            }],
+            "severity": "MINOR",
+            "value": 20
+        }]
+    }, {
+        "hold-off-for-n-samples": 4,
+        "hold-on-for-n-samples": 2,
+        "id": "session-count-triggered-scale-out",
+        "monitoring-param-ref": "monitoring-param-FGSessionCount",
+        "threshold": [{
+            "action": [{
+                "name": "scale-out",
+                "threshold-adjustment": 100
+            }],
+            "severity": "CRITICAL",
+            "value": 100
+        }]
+    }]
+
+    ,
+    "vnfr": {
+        "vnfr:vnfr": {
+            "dashboard-url": "http://10.25.0.50:80/",
+            "vendor": "Fortigate",
+            "operational-status": "running",
+            "vdur": [{
+                "flavor-id": "11bd3790-8dde-4119-be5d-a2dcb44be417",
+                "unique-short-name": "FGSANSD-Wi9F9pXVU-fgtvdu",
+                "vdu-id-ref": "fgtvdu",
+                "interface": [{
+                    "external-connection-point-ref": "fortios/mgmt",
+                    "name": "mgmt",
+                    "position": 1
+                }, {
+                    "external-connection-point-ref": "fortios/cp1",
+                    "name": "port1",
+                    "position": 2
+                }, {
+                    "external-connection-point-ref": "fortios/cp2",
+                    "name": "port2",
+                    "position": 3
+                }],
+                "operational-status": "running",
+                "guest-epa": {
+                    "cpu-pinning-policy": "ANY"
+                },
+                "vim-id": "3a6bfdf6-ae86-4d06-8ec9-a1c6121eb538",
+                "id": "971c31f1-ba4b-4ba1-8c6e-4bc736b2534e",
+                "vm-management-ip": "10.25.0.50",
+                "name": "default__FG_SA_NSD__FGT-HTTPServer-group__0__FortiGate_vnfd__5__fgtvdu",
+                "management-ip": "10.25.0.50",
+                "vm-flavor": {
+                    "memory-mb": 1024,
+                    "storage-gb": 10,
+                    "vcpu-count": 1
+                },
+                "supplemental-boot-data": {
+                    "boot-data-drive": "false"
+                },
+                "image-id": "0c54abfe-9bfd-4070-a492-2abd0e47292d"
+            }],
+            "connection-point": [{
+                "connection-point-id": "3533945f-5445-4d10-9da9-3376a457b36d",
+                "ip-address": "16.0.0.2",
+                "mac-address": "fa:16:3e:06:10:12",
+                "name": "fortios/cp1",
+                "port-security-enabled": "false",
+                "type": "VPORT",
+                "vlr-ref": "d8175049-0f60-4913-9ab0-58f08bf94c8c"
+            }, {
+                "connection-point-id": "1e7d9ed6-dac0-4b72-9722-6f73d5ff4a8e",
+                "ip-address": "15.0.0.12",
+                "mac-address": "fa:16:3e:72:a0:06",
+                "name": "fortios/cp2",
+                "port-security-enabled": "false",
+                "type": "VPORT",
+                "vlr-ref": "a0da7862-d3d9-4ce6-9bda-d9d8de0a5000"
+            }, {
+                "connection-point-id": "a9d64187-29fb-413a-a134-efd22e690f4b",
+                "ip-address": "10.25.0.50",
+                "mac-address": "fa:16:3e:99:6c:db",
+                "name": "fortios/mgmt",
+                "security-group": [{
+                    "id": "431b819d-4a89-47cf-8a08-ba3afdd1ad44",
+                    "name": "default"
+                }],
+                "type": "VPORT",
+                "vlr-ref": "fb4b83fc-715a-4e2f-8f03-e82d5e28a8f9"
+            }],
+            "id": "c14dae6d-ce79-4f31-8075-bc6160a1eac3",
+            "mgmt-interface": {
+                "ip-address": "10.25.0.50",
+                "port": 0
+            },
+            "nsr-id-ref": "2bb1ed64-b2d1-4ebe-903f-ed00157cdf4d",
+            "vnfd": {
+                "monitoring-param": [{
+                    "group-tag": "group1",
+                    "id": "monitoring-param-FGSessionCount",
+                    "json-query-method": "NAMEKEY",
+                    "name": "snmp_count_session",
+                    "rw-vnfr:data-source-ref": "data-source-collectd-for-vnf",
+                    "units": "sessions",
+                    "value-type": "INT",
+                    "widget-type": "COUNTER"
+                }, {
+                    "id": "monitoring-param-avgJitter",
+                    "json-query-method": "NAMEKEY",
+                    "name": "endToEndDelayAvg",
+                    "rw-vnfr:data-source-ref": "data-source-collectd-for-vnf",
+                    "units": "msecs",
+                    "value-type": "INT",
+                    "widget-type": "COUNTER"
+                }],
+                "vdu": [{
+                    "cloud-init-file": "fgt_cloud_init.txt",
+                    "guest-epa": {
+                        "cpu-pinning-policy": "ANY"
+                    },
+                    "id": "fgtvdu",
+                    "image": "FortinetFW",
+                    "interface": [{
+                        "external-connection-point-ref": "fortios/mgmt",
+                        "name": "mgmt",
+                        "position": 1,
+                        "rw-vnfr:floating-ip-needed": "false",
+                        "type": "EXTERNAL",
+                        "virtual-interface": {
+                            "type": "VIRTIO"
+                        }
+                    }, {
+                        "external-connection-point-ref": "fortios/cp1",
+                        "name": "port1",
+                        "position": 2,
+                        "rw-vnfr:floating-ip-needed": "false",
+                        "type": "EXTERNAL",
+                        "virtual-interface": {
+                            "type": "VIRTIO"
+                        }
+                    }, {
+                        "external-connection-point-ref": "fortios/cp2",
+                        "name": "port2",
+                        "position": 3,
+                        "rw-vnfr:floating-ip-needed": "false",
+                        "type": "EXTERNAL",
+                        "virtual-interface": {
+                            "type": "VIRTIO"
+                        }
+                    }, {
+                        "external-connection-point-ref": "fortios/cp3",
+                        "name": "port3",
+                        "position": 4,
+                        "rw-vnfr:floating-ip-needed": "false",
+                        "type": "EXTERNAL",
+                        "virtual-interface": {
+                            "type": "VIRTIO"
+                        }
+                    }],
+                    "name": "fgtvdu",
+                    "supplemental-boot-data": {
+                        "boot-data-drive": "false"
+                    },
+                    "vm-flavor": {
+                        "memory-mb": 1024,
+                        "storage-gb": 10,
+                        "vcpu-count": 1
+                    }
+                }],
+                "vendor": "Fortigate",
+                "connection-point": [{
+                    "name": "fortios/cp1",
+                    "port-security-enabled": "false",
+                    "type": "VPORT"
+                }, {
+                    "name": "fortios/cp2",
+                    "port-security-enabled": "false",
+                    "type": "VPORT"
+                }, {
+                    "name": "fortios/cp3",
+                    "port-security-enabled": "false",
+                    "type": "VPORT"
+                }, {
+                    "name": "fortios/mgmt",
+                    "type": "VPORT"
+                }],
+                "id": "a1b4a216-30ef-4003-b4d9-2d74e4ce6b6a",
+                "mgmt-interface": {
+                    "cp": "fortios/mgmt",
+                    "dashboard-params": {
+                        "https": "false",
+                        "path": "/"
+                    }
+                },
+                "rw-vnfr:cenx-tca-policy": [{
+                    "hold-off-for-n-samples": 4,
+                    "hold-on-for-n-samples": 2,
+                    "id": "avgJitter-triggered-scale-in",
+                    "monitoring-param-ref": "monitoring-param-avgJitter",
+                    "threshold": [{
+                        "action": [{
+                            "name": "scale-in",
+                            "threshold-adjustment": 0
+                        }],
+                        "severity": "MINOR",
+                        "value": 1000
+                    }]
+                }, {
+                    "hold-off-for-n-samples": 4,
+                    "hold-on-for-n-samples": 2,
+                    "id": "avgJitter-triggered-scale-out",
+                    "monitoring-param-ref": "monitoring-param-avgJitter",
+                    "threshold": [{
+                        "action": [{
+                            "name": "scale-out",
+                            "threshold-adjustment": 0
+                        }],
+                        "severity": "CRITICAL",
+                        "value": 20000
+                    }]
+                }, {
+                    "hold-off-for-n-samples": 4,
+                    "hold-on-for-n-samples": 2,
+                    "id": "session-count-triggered-scale-in",
+                    "monitoring-param-ref": "monitoring-param-FGSessionCount",
+                    "threshold": [{
+                        "action": [{
+                            "name": "scale-in",
+                            "threshold-adjustment": -100
+                        }],
+                        "severity": "MINOR",
+                        "value": 20
+                    }]
+                }, {
+                    "hold-off-for-n-samples": 4,
+                    "hold-on-for-n-samples": 2,
+                    "id": "session-count-triggered-scale-out",
+                    "monitoring-param-ref": "monitoring-param-FGSessionCount",
+                    "threshold": [{
+                        "action": [{
+                            "name": "scale-out",
+                            "threshold-adjustment": 100
+                        }],
+                        "severity": "CRITICAL",
+                        "value": 100
+                    }]
+                }],
+                "rw-vnfr:data-sources": {
+                    "data-source": [{
+                        "id": "data-source-collectd-for-vnf",
+                        "kafka-connector": {
+                            "brokers": "vnf-broker",
+                            "topic": "vnf-topic",
+                            "types": "distributed"
+                        }
+                    }]
+                },
+                "short-name": "FortiGate_vnfd",
+                "name": "FortiGate_vnfd",
+                "version": "1.0",
+                "logo": "FortiGateVMLogo.png",
+                "rw-vnfr:meta": "{\"containerPositionMap\":{\"a1b4a216-30ef-4003-b4d9-2d74e4ce6b6a\":{\"top\":30,\"left\":260,\"right\":510,\"bottom\":85,\"width\":250,\"height\":55},\"a1b4a216-30ef-4003-b4d9-2d74e4ce6b6a/vdu-1\":{\"top\":130,\"left\":260,\"right\":510,\"bottom\":185,\"width\":250,\"height\":55},\"a1b4a216-30ef-4003-b4d9-2d74e4ce6b6a/fgtvdu\":{\"top\":135,\"left\":255,\"right\":505,\"bottom\":190,\"width\":250,\"height\":55}}}",
+                "service-function-chain": "UNAWARE",
+                "description": "Fortios vnfd"
+            },
+            "member-vnf-index-ref": 5,
+            "short-name": "FortiGate_vnfd",
+            "name": "default__FG_SA_NSD__FGT-HTTPServer-group__0__FortiGate_vnfd__5",
+            "create-time": 1523989822,
+            "rw-vnfr:datacenter": "VIM",
+            "version": "1.0",
+            "description": "Fortios vnfd",
+            "config-status": "config-not-needed"
+        }
+    }
+}
