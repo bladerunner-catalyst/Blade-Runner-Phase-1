@@ -1,0 +1,19 @@
+<organization>
+    <name>AWS-TMF-1</name>
+    <long-name>AWS TMF Catalyst Org</long-name>
+    <city>London</city>
+    <country>GB</country>
+    <site>
+        <node-id>sdp-azure-cpe-1</node-id>
+        <name>LON</name>
+        <long-name>London Office</long-name>
+        <city>London</city>
+        <country>GB</country>
+        <appliance>
+            <resource>small</resource>
+            <bridge>wanbr</bridge>
+            <bridge>lanbr</bridge>
+        </appliance>
+        <policy>ALL</policy>
+    </site>
+</organization>
