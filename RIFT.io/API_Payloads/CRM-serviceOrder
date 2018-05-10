@@ -1,0 +1,230 @@
+Below is a SAMPLE POST serviceOrder API & payload from CRM to SO:
+
+-------------
+
+curl -X POST \
+  http://{{SO-Vodafone-IP}}:{Port}}/tmf-api/v1/serviceOrder \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "externalId": "394",
+  "priority": 2,
+  "externalOrderId": "123456",
+  "requestedStartDate": "2018-05-08T20:45:45+02:00",
+  "requestedCompletionDate": "2018-05-08T20:45:43+02:00",
+  "notificationContact": "admin",
+  "notes": [
+    {
+      "date": "2018-05-08T20:45:45+02:00",
+      "author": "admin"
+    }
+  ],
+  "relatedParties": [
+    {
+      "role": "SERVICE_PROVIDER",
+      "id": "VODAFONE",
+      "name": "VODAFONE"
+    },
+    {
+      "role": "TENANT",
+      "id": "VODAFONE",
+      "name": "VODAFONE"
+    },
+    {
+      "role": "CUSTOMER",
+      "id": "1182896926",
+      "name": "1182896926"
+    }
+  ],
+  "relatedOrder": {
+    "relationType": "reference",
+    "id": "1873"
+  },
+  "orderItems": [
+    {
+      "id": "1876",
+      "orderItemAction": "create",
+      "service": {
+        "id": "7f04ee2f-8a15-4a8a-8857-9cc06a054a17",
+        "name": "GOLD_ASSURANCE",
+        "serviceIdentifier": "1182896926_f4cf45c8c51c4b74b37d78823098b768",
+        "relatedParties": [
+          {
+            "role": "SERVICE_PROVIDER",
+            "id": "VODAFONE",
+            "name": "VODAFONE"
+          }
+        ]
+      }
+    },
+    {
+      "id": "1878",
+      "orderItemAction": "create",
+      "service": {
+        "id": "b29d23f4-0b5b-49f9-ae1f-73af190e6193",
+        "name": "MEC BASE",
+        "serviceIdentifier": "1182896926_7c98deeba7354d6b8f75f273bb54a1fc",
+        "relatedParties": [
+          {
+            "role": "SERVICE_PROVIDER",
+            "id": "VODAFONE",
+            "name": "VODAFONE"
+          }
+        ]
+      }
+    }
+  ],
+  "relatedObjects": [
+    {
+      "type": "Order",
+      "id": "1873",
+      "tenant": "VODAFONE@MASTER_01",
+      "distance": 1,
+      "orderType": "ParentOrder",
+      "owner": "1182896926"
+    }
+  ]
+}'
+
+--------------------------
+
+Response Received:
+
+{
+    "id": "394",
+    "href": "http://host:port/serviceOrder/MWCDemoServiceOrder",
+    "state": "completed",
+    "completionDate": "2018-05-08T20:45:43+02:00",
+    "startDate": "2018-05-08T20:45:45+02:00",
+    "orderDate": "2018-05-08T20:45:45+02:00",
+    "externalId": "394",
+    "priority": 2,
+    "externalOrderId": "123456",
+    "requestedStartDate": "2018-05-08T20:45:45+02:00",
+    "requestedCompletionDate": "2018-05-08T20:45:43+02:00",
+    "notificationContact": "admin",
+    "notes": [
+        {
+            "date": "2018-05-08T20:45:45+02:00",
+            "author": "admin"
+        }
+    ],
+    "relatedParties": [
+        {
+            "role": "SERVICE_PROVIDER",
+            "id": "VODAFONE",
+            "name": "VODAFONE"
+        },
+        {
+            "role": "TENANT",
+            "id": "VODAFONE",
+            "name": "VODAFONE"
+        },
+        {
+            "role": "CUSTOMER",
+            "id": "1182896926",
+            "name": "1182896926"
+        }
+    ],
+    "relatedOrder": {
+        "relationType": "reference",
+        "id": "1873"
+    },
+    "orderItems": [
+        {
+            "id": "1876",
+            "orderItemAction": "create",
+            "service": {
+                "id": "7f04ee2f-8a15-4a8a-8857-9cc06a054a17",
+                "name": "GOLD_ASSURANCE",
+                "serviceIdentifier": "1182896926_f4cf45c8c51c4b74b37d78823098b768",
+                "relatedParties": [
+                    {
+                        "role": "SERVICE_PROVIDER",
+                        "id": "VODAFONE",
+                        "name": "VODAFONE"
+                    }
+                ],
+                "serviceCharacteristics": [
+                    {
+                        "name": "GOLD_ASSURANCE:NS_ID",
+                        "value": "89df0eaa-63f5-11e7-86c1-02420a40aaaa"
+                    },
+                    {
+                        "name": "GOLD_ASSURANCE:NS_NAME",
+                        "value": "Bladerunner_LocalMonitoring"
+                    },
+                    {
+                        "name": "GOLD_ASSURANCE:NSD_ID",
+                        "value": "ad5eb17c-c76a-44cf-8bd5-309b12c31d5f"
+                    },
+                    {
+                        "name": "GOLD_ASSURANCE:OT",
+                        "value": "resource-orchestrator"
+                    },
+                    {
+                        "name": "GOLD_ASSURANCE:ON",
+                        "value": "ONAP"
+                    },
+                    {
+                        "name": "GOLD_ASSURANCE:DCN",
+                        "value": "DU-LONDON"
+                    }
+                ]
+            },
+            "state": "completed"
+        },
+        {
+            "id": "1878",
+            "orderItemAction": "create",
+            "service": {
+                "id": "b29d23f4-0b5b-49f9-ae1f-73af190e6193",
+                "name": "MEC BASE",
+                "serviceIdentifier": "1182896926_7c98deeba7354d6b8f75f273bb54a1fc",
+                "relatedParties": [
+                    {
+                        "role": "SERVICE_PROVIDER",
+                        "id": "VODAFONE",
+                        "name": "VODAFONE"
+                    }
+                ],
+                "serviceCharacteristics": [
+                    {
+                        "name": "MEC BASE:NS_ID",
+                        "value": "89df0eaa-63f5-11e7-86c1-02420a40bbbb"
+                    },
+                    {
+                        "name": "MEC BASE:NS_NAME",
+                        "value": "Bladerunner_LocalBase"
+                    },
+                    {
+                        "name": "MEC BASE:NSD_ID",
+                        "value": "ac870065-87b0-437f-b157-0d39242e06cc"
+                    },
+                    {
+                        "name": "MEC BASE:OT",
+                        "value": "resource-orchestrator"
+                    },
+                    {
+                        "name": "MEC BASE:ON",
+                        "value": "ONAP"
+                    },
+                    {
+                        "name": "MEC BASE:DCN",
+                        "value": "DU-LONDON"
+                    }
+                ]
+            },
+            "state": "completed"
+        }
+    ],
+    "relatedObjects": [
+        {
+            "type": "Order",
+            "id": "1873",
+            "tenant": "VODAFONE@MASTER_01",
+            "distance": 1,
+            "orderType": "ParentOrder",
+            "owner": "1182896926"
+        }
+    ]
+}
