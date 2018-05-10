@@ -1,0 +1,23 @@
+Below is a SAMPLE GET serviceInventory API response from DO to SO:
+
+---------
+curl -X GET \
+ -H 'Accept: application/json' -H 'Content-Type: application/json' \
+ 'http://{{DO-IP}}:{{Port}}/nbi/api/v1/service/87f817ed-b7bc-4477-9c3f-0a3d782d5b12?serviceSpecification.id=276df01c-b15e-43ce-9105-1827c38b2957'
+
+--------
+Response:
+
+{ '@type': 'serviceONAP',
+  'hasStarted': 'yes',
+  'id': '87f817ed-b7bc-4477-9c3f-0a3d782d5b12',
+  'name': 'BLD-FGT-vFW-633',
+  'relatedParty': {'id': 'Demonstration', 'role': 'ONAPcustomer'},
+  'serviceSpecification': { '@type': 'ONAPservice',
+                            'id': '276df01c-b15e-43ce-9105-1827c38b2957',
+                            'invariantUUID': 'b70c67e6-d72b-4163-a9bf-211c0f185104'},
+  'supportingResource': [ { '@referredType': 'ONAP resource',
+                            'id': '186bcc36-cc3c-4e6c-8ac2-9d3b8a78b12e',
+                            'ipAddress': '192.168.16.11',
+                            'name': 'BLD-FGT-vFW-633_V0_M0-fgt-tjopwencym66'}],
+  'type': 'service-instance'}
