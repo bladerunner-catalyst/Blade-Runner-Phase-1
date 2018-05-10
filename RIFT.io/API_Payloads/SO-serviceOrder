@@ -1,0 +1,56 @@
+Below is a SAMPLE POST serviceOrder API & payload from SO to DO:
+
+-------------
+
+curl -X POST \
+ -H 'Accept: application/json' -H 'Content-Type: application/json' \
+ 'http://52.191.215.57:8085/nbi/api/v1/serviceOrder' \
+ -d '{ 
+  '@baseType': 'ServiceOrder',
+  '@schemaLocation': '',
+  '@type': 'string',
+  'category': 'Network L4+',
+  'completionDateTime': None,
+  'description': '',
+  'expectedCompletionDate': None,
+  'externalId': 'b70c67e6-d72b-4163-a9bf-211c0f185104',
+  'href': 'serviceOrder/5af390824bf3d66721c09c59',
+  'id': '5af390824bf3d66721c09c59',
+  'orderDate': '2018-05-10T00:21:22.612Z',
+  'orderItem': [ { '@baseType': 'ServiceOrderItem',
+                   '@schemaLocation': None,
+                   '@type': None,
+                   'action': 'ADD',
+                   'id': '1',
+                   'orderItemRelationship': [],
+                   'service': { '@schemaLocation': None,
+                                '@type': None,
+                                'href': None,
+                                'id': None,
+                                'name': 'BLD-FGT-vFW-633',
+                                'relatedParty': None,
+                                'serviceCharacteristic': None,
+                                'serviceRelationship': None,
+                                'serviceSpecification': { '@baseType': None,
+                                                          '@schemaLocation': None,
+                                                          '@type': None,
+                                                          'href': None,
+                                                          'id': '276df01c-b15e-43ce-9105-1827c38b2957',
+                                                          'name': None,
+                                                          'targetServiceSchema': None,
+                                                          'version': None},
+                                'serviceState': 'active'},
+                   'state': 'ACKNOWLEDGED'}],
+  'orderRelationship': None,
+  'priority': '1',
+  'relatedParty': [ { '@referredType': 'INFRA',
+                      'href': None,
+                      'id': 'Demonstration',
+                      'name': 'Demonstration',
+                      'role': 'ONAPcustomer'}],
+  'requestedCompletionDate': '2018-04-05T17:20:11.978Z',
+  'requestedStartDate': '2018-04-05T17:20:11.978Z',
+  'startDate': None,
+  'state': 'ACKNOWLEDGED'}'
+  
+  -------
