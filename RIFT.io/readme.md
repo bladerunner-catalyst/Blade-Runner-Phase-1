@@ -1,15 +1,12 @@
-This directory contains four ETSI Network Service Packages and their constituent
-VNF Packages.
+This directory contains the following:
 
-The Base directory contains the base descriptors without the Service Assurance 
-extensions.  The Service Assurance directory has the base descriptors with the 
-SA attributes added.
+* API_Payloads – Capture of TM Forum Open APIs used by the SO
+* Base - base service descriptors (NS and VNF Packages) containing NSD and VNFD
+* Service Assurance – service descriptors with service assurance attributes added
 
-All packages are in TOSCA CSAR format according to ETSI NFV SOL 004.  The
-YAML descriptors (NSD and VNFD) are contained in the "Definitions" directory.
+All NS and VNF packages in the Base and Service Assurance directories are in TOSCA CSAR format according to ETSI NFV SOL 004.  The YAML descriptors (NSD and VNFD) are contained in the "Definitions" directory.
 
-The Central Base NSD and Central Monitoring NSD contains a nested NSD that
-references the Local Base and Local Monitoring NSDs to be instantiated by du.
+The Central Base NSD and Central Monitoring NSD contains a nested NSD that references the Local Base and Local Monitoring NSDs to be instantiated by du.
 
 Contents:
 
@@ -26,3 +23,5 @@ VNF
 - EXFO vVerifier vProbe
 - Infosys ARVR
 - Infosys VR Backend
+
+Only the Fortigate vFIrewall VNF was modified with Service Assurance attributes.
