@@ -1,0 +1,104 @@
+--> END POST (120-byte body)
+<-- HTTP/1.1 200 OK (5ms)
+X-Powered-By: Express
+Access-Control-Allow-Origin: *
+X-Mockiji-Url: /servicequalification/serviceQualification
+X-Mockiji-File: /home/app/mockiji/mocks/servicequalification/serviceQualification/post.json
+Cache-Control: no-cache
+Content-Type: application/json; charset=utf-8
+Content-Length: 2151
+ETag: W/"867-wk3v50L5drMrhGwiGIhwbw"
+Date: Fri, 11 May 2018 07:10:18 GMT
+Connection: keep-alive
+OkHttp-Sent-Millis: 1526022618517
+OkHttp-Received-Millis: 1526022618522
+
+{
+  "id": 0,
+  "href": "string",
+  "interactionDate": "2018-04-18T06:48:48.522Z",
+  "provideAlternative": "string",
+  "provideOnlyEligible": "string",
+  "description": "string",
+  "eligibilityDate": "2018-04-18T06:48:48.522Z",
+  "qualificationState": "InProgress",
+  "address": {
+    "id": "string",
+    "href": "string"
+  },
+  "addressDescription": {
+    "streetNr": "string",
+    "streetNrSuffix": "string",
+    "streetNrLast": "string",
+    "streetNrLastSuffix": "string",
+    "streetName": "string",
+    "streetType": "string",
+    "streetSuffix": "string",
+    "postcode": "string",
+    "locality": "string",
+    "city": "string",
+    "stateOrProvince": "string",
+    "country": "string"
+  },
+  "geoCode": {
+    "latitude": "string",
+    "longitude": "string",
+    "geographicDatum": "string"
+  },
+  "publicKey": "string",
+  "physicalTerminationPoint": [
+    {
+      "accessType": "string"
+    }
+  ],
+  "serviceQualificationItem": [
+    {
+      "service": {
+        "serviceCharacteristic": [
+{
+            "name": "string",
+            "value": "string"
+          }
+        ],
+        "serviceSpecification": {
+          "id": "string",
+          "href": "string",
+          "serviceCategoryId": "string",
+          "serviceSpecificationCharacteristic": [
+            {
+              "id": "string",
+              "name": "string",
+              "valuefrom": "string",
+              "valueto": "string"
+            }
+          ]
+        }
+      },
+      "alternativeService": [
+        {
+          "serviceCharacteristic": [
+            {
+              "name": "string",
+              "value": "string"
+            }
+          ],
+          "serviceSpecification": {
+            "id": "string",
+            "href": "string",
+            "serviceCategoryId": "string",
+            "serviceSpecificationCharacteristic": [
+              {
+                "id": "string",
+                "name": "string",
+                "valuefrom": "string",
+                "valueto": "string"
+              }
+            ]
+          }
+        }
+      ],
+      "availability": "string",
+      "serviceabilityDate": "2018-04-18T06:48:48.522Z"
+    }
+  ]
+}

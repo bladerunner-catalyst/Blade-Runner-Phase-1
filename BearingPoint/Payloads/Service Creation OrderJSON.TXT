@@ -1,0 +1,85 @@
+{
+	"externalId": "476",
+	"priority": 2,
+	"externalOrderId": "123456",
+	"requestedStartDate": "2018-05-11T16:47:34+02:00",
+	"requestedCompletionDate": "2018-05-11T16:47:29+02:00",
+	"notes": [
+		{
+			"date": "2018-05-11T16:47:34+02:00"
+		}
+	],
+	"relatedParties": [
+		{
+			"role": "SERVICE_PROVIDER",
+			"id": "DU",
+			"name": "DU"
+		},
+		{
+			"role": "TENANT",
+			"id": "VODAFONE",
+			"name": "VODAFONE"
+		},
+		{
+			"role": "CUSTOMER",
+			"id": "1182896603",
+			"name": "1182896603"
+		}
+	],
+	"relatedOrder": {
+		"relationType": "reference",
+		"id": "2238"
+	},
+	"orderItems": [
+		{
+			"id": "2240",
+			"orderItemAction": "create",
+			"service": {
+				"id": "12cc79b0-3101-4b5b-bf4a-acefcb375ae8",
+				"name": "GOLD_ASSURANCE",
+				"serviceIdentifier": "1182896603_294f6df3e8b94e98a983875142e3f5ae",
+				"relatedParties": [
+					{
+						"role": "SERVICE_PROVIDER",
+						"id": "DU",
+						"name": "DU"
+					}
+				]
+			}
+		},
+		{
+			"id": "2241",
+			"orderItemAction": "create",
+			"service": {
+				"id": "742c6da6-f2d0-46ef-9760-52c6ff820265",
+				"name": "MEC BASE",
+				"serviceIdentifier": "1182896603_caf2e44ac92b410ea6fd951c67b150dc",
+				"relatedParties": [
+					{
+						"role": "SERVICE_PROVIDER",
+						"id": "DU",
+						"name": "DU"
+					}
+				]
+			}
+		}
+	],
+	"relatedObjects": [
+		{
+			"type": "Order",
+			"id": "2232",
+			"tenant": "VODAFONE@MASTER_01",
+			"distance": 2,
+			"orderType": "ParentOrder",
+			"owner": "1182896975"
+		},
+		{
+			"type": "Order",
+			"id": "2238",
+			"tenant": "VODAFONE",
+			"distance": 1,
+			"orderType": "ParentOrder",
+			"owner": "1182896603"
+		}
+	]
+}
