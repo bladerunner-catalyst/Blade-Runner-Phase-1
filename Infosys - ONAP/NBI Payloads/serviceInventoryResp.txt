@@ -1,0 +1,62 @@
+[
+    {
+        "id": "57cc5a6d-0191-40d4-ba82-325f36236149",
+        "name": "BLD-EXFO-vVRF-107",
+        "serviceSpecification": {
+            "name": "BLD-EXFO-VVERIFIER-SRVC",
+            "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce"
+        },
+        "relatedParty": {
+            "role": "ONAPcustomer",
+            "id": "Demonstration"
+        }
+    },
+    {
+        "id": "aaf87f37-13fb-4bb8-afdd-3f07e0b32a79",
+        "name": "BLD-RVBD-vSDW-050",
+        "serviceSpecification": {
+            "name": "BLD-EXFO-VVERIFIER-SRVC",
+            "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce"
+        },
+        "relatedParty": {
+            "role": "ONAPcustomer",
+            "id": "Demonstration"
+        }
+    },
+    {
+        "id": "f6c97f59-f810-47fa-a446-25075c96af45",
+        "name": "BLD-EXFO-vVRF-008",
+        "serviceSpecification": {
+            "name": "BLD-EXFO-VVERIFIER-SRVC",
+            "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce"
+        },
+        "relatedParty": {
+            "role": "ONAPcustomer",
+            "id": "Demonstration"
+        }
+    },
+    {
+        "id": "c2e2549d-9090-482f-86cc-632d8979590b",
+        "name": "BLD-EXFO-vVRF-021",
+        "serviceSpecification": {
+            "name": "BLD-EXFO-VVERIFIER-SRVC",
+            "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce"
+        },
+        "relatedParty": {
+            "role": "ONAPcustomer",
+            "id": "Demonstration"
+        }
+    },
+    {
+        "id": "42bfd131-cbfb-4952-b106-a0f4b04ec56a",
+        "name": "BLD-EXFO-vVRF-777",
+        "serviceSpecification": {
+            "name": "BLD-EXFO-VVERIFIER-SRVC",
+            "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce"
+        },
+        "relatedParty": {
+            "role": "ONAPcustomer",
+            "id": "Demonstration"
+        }
+    }
+]

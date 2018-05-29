@@ -1,0 +1,132 @@
+[
+    {
+        "id": "e6254b3c-9824-46c1-b774-8d33d4fa00f3",
+        "name": "demoVFWCL",
+        "invariantUUID": "7bd57bf9-9f02-4b2a-a7ac-0434fbb37dad",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTION_REJECTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "982d54e3-4d28-4a39-a07b-5a871490f146",
+        "name": "demoVLB",
+        "invariantUUID": "212c1014-cae7-4818-b368-2edd875a0ea6",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTION_REJECTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "6e448213-1469-4295-bfc8-4593467815ea",
+        "name": "demoVCPE",
+        "invariantUUID": "9c9d913f-b53a-46d5-9d91-e51290d97d1d",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTION_REJECTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "c5208b20-cd9e-448b-b481-d8d7b4a3f018",
+        "name": "RVRSvc",
+        "invariantUUID": "8cffbe87-fc71-402f-afb6-e1c60b5bc7df",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce",
+        "name": "BLD-EXFO-VVERIFIER-SRVC",
+        "invariantUUID": "db954b5f-6349-42ee-abb6-46df933172fe",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "15efa27b-ef38-41f6-8d4c-a43b2b0778af",
+        "name": "FW_Svc",
+        "invariantUUID": "7b482ed5-b3fc-40d9-97ec-3a2c4c4e121e",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "e5fee094-dc6a-4c5c-a1f2-b83a3806d76a",
+        "name": "BLD-EXFO-VVERIFIER-SERVICE",
+        "invariantUUID": "71927c6a-6b84-4043-911d-892d27b78242",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTION_REJECTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "50edf8c6-325f-43e1-a6e9-ff3fe0fb6b34",
+        "name": "BLD-EXFO-VVERIFIER-SERVICE",
+        "invariantUUID": "71927c6a-6b84-4043-911d-892d27b78242",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTION_NOT_APPROVED",
+        "version": "1.2",
+        "lifecycleStatus": "NOT_CERTIFIED_CHECKIN",
+        "relatedParty": {
+            "id": "cs0008",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "a23b59d3-b305-4678-b915-99b5cc9bee83",
+        "name": "InfyARVRSvc",
+        "invariantUUID": "1f74be2d-29aa-428e-a47c-4dddd1c089de",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "921751d6-2268-4af9-9a77-e5d710f95ab4",
+        "name": "RVRSvc",
+        "invariantUUID": "8cffbe87-fc71-402f-afb6-e1c60b5bc7df",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTION_NOT_APPROVED",
+        "version": "1.1",
+        "lifecycleStatus": "NOT_CERTIFIED_CHECKIN",
+        "relatedParty": {
+            "id": "cs0008",
+            "role": "lastUpdater"
+        }
+    }
+]

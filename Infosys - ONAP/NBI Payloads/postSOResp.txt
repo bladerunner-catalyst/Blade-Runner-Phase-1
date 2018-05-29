@@ -1,0 +1,60 @@
+{
+    "id": "5af2e0914bf3d66721c09c3f",
+    "href": "serviceOrder/5af2e0914bf3d66721c09c3f",
+    "externalId": "b70c67e6-d72b-4163-a9bf-211c0f185189",
+    "priority": "1",
+    "description": "",
+    "category": "Network L4+",
+    "state": "ACKNOWLEDGED",
+    "orderDate": "2018-05-09T11:50:41.123Z",
+    "completionDateTime": null,
+    "expectedCompletionDate": null,
+    "requestedStartDate": "2018-04-05T17:20:11.978Z",
+    "requestedCompletionDate": "2018-04-05T17:20:11.978Z",
+    "startDate": null,
+    "@baseType": "ServiceOrder",
+    "@type": "string",
+    "@schemaLocation": "",
+    "relatedParty": [
+        {
+            "id": "Demonstration",
+            "href": null,
+            "role": "ONAPcustomer",
+            "name": "Demonstration",
+            "@referredType": "INFRA"
+        }
+    ],
+    "orderRelationship": null,
+    "orderItem": [
+        {
+            "id": "1",
+            "action": "ADD",
+            "state": "ACKNOWLEDGED",
+            "@type": null,
+            "@schemaLocation": null,
+            "@baseType": "ServiceOrderItem",
+            "orderItemRelationship": [],
+            "service": {
+                "id": null,
+                "href": null,
+                "name": "BLD-INFY-vARVR-023",
+                "serviceState": "active",
+                "@type": null,
+                "@schemaLocation": null,
+                "serviceCharacteristic": null,
+                "serviceRelationship": null,
+                "relatedParty": null,
+                "serviceSpecification": {
+                    "id": "a23b59d3-b305-4678-b915-99b5cc9bee83",
+                    "href": null,
+                    "name": null,
+                    "version": null,
+                    "targetServiceSchema": null,
+                    "@type": null,
+                    "@schemaLocation": null,
+                    "@baseType": null
+                }
+            }
+        }
+    ]
+}

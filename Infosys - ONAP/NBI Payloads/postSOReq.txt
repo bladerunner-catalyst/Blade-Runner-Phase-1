@@ -1,0 +1,29 @@
+{
+	"@type": "string",
+	"requestedCompletionDate": "2018-04-05T17:20:11.978Z",
+	"priority": "1",
+	"@baseType": "ServiceOrder",
+	"relatedParty": [{
+		"id": "Demonstration",
+		"name": "Demonstration",
+		"@referredType": "INFRA",
+		"role": "ONAPcustomer"
+	}],
+	"orderItem": [{
+		"service": {
+			"serviceState": "active",
+			"serviceSpecification": {
+				"id": "a23b59d3-b305-4678-b915-99b5cc9bee83"
+			},
+			"name": "BLD-INFY-vARVR-023"
+		},
+		"id": "1",
+		"action": "add",
+		"@baseType": "ServiceOrderItem"
+	}],
+	"@schemaLocation": "",
+	"externalId": "b70c67e6-d72b-4163-a9bf-211c0f185189",
+	"category": "Network L4+",
+	"requestedStartDate": "2018-04-05T17:20:11.978Z",
+	"description": ""
+}

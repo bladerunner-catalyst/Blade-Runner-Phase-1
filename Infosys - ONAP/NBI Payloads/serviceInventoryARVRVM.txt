@@ -1,0 +1,24 @@
+{
+    "id": "f7958cc9-d456-41c7-80e0-8e941e523241",
+    "name": "BLD-INFY-vARVR-556",
+    "serviceSpecification": {
+        "id": "a23b59d3-b305-4678-b915-99b5cc9bee83",
+        "invariantUUID": "1f74be2d-29aa-428e-a47c-4dddd1c089de",
+        "@type": "ONAPservice"
+    },
+    "supportingResource": [
+        {
+            "id": "77f98f6d-5209-4d38-8a54-43e08a1ff4b7",
+            "name": "BLD-INFY-vARVR-556_V0_M0-vms_instance-uf662ynkmq7u",
+            "ipAddress": "147.75.194.18",
+            "@referredType": "ONAP resource"
+        }
+    ],
+    "@type": "serviceONAP",
+    "hasStarted": "yes",
+    "relatedParty": {
+        "role": "ONAPcustomer",
+        "id": "Demonstration"
+    },
+    "type": "service-instance"
+}

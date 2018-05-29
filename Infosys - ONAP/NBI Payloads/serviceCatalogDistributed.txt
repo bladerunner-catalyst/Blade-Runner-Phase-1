@@ -1,0 +1,54 @@
+[
+    {
+        "id": "c5208b20-cd9e-448b-b481-d8d7b4a3f018",
+        "name": "RVRSvc",
+        "invariantUUID": "8cffbe87-fc71-402f-afb6-e1c60b5bc7df",
+        "category": "Network L1-3",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "b88a00c7-5744-4583-8fd9-9f837e78b9ce",
+        "name": "BLD-EXFO-VVERIFIER-SRVC",
+        "invariantUUID": "db954b5f-6349-42ee-abb6-46df933172fe",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "a23b59d3-b305-4678-b915-99b5cc9bee83",
+        "name": "InfyARVRSvc",
+        "invariantUUID": "1f74be2d-29aa-428e-a47c-4dddd1c089de",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    },
+    {
+        "id": "276df01c-b15e-43ce-9105-1827c38b2957",
+        "name": "Forti_Svc",
+        "invariantUUID": "b70c67e6-d72b-4163-a9bf-211c0f185104",
+        "category": "Network L4+",
+        "distributionStatus": "DISTRIBUTED",
+        "version": "1.0",
+        "lifecycleStatus": "CERTIFIED",
+        "relatedParty": {
+            "id": "jm0007",
+            "role": "lastUpdater"
+        }
+    }
+]
