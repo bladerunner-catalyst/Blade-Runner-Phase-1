@@ -1,0 +1,34 @@
+Below is a SAMPLE POST Usage API & payload from SO to CRM:
+
+-------------
+
+curl -X POST \
+  https://bladerunner.infonova.com/r6-api/du/usages/v1/usages \
+  -H 'Accept: application/json' \
+  -H 'Authorization: <-- OAuth2.0 Bearer Token here -->' \
+  -H 'Content-Type: application/json' \
+  -d '{
+	"usages": [
+      {
+       "id": "c79c99188c034ba0a8508f45e6da2931",
+   		 "reference": "API_USAGE_FROM_PROVIDER",
+       "serviceIdentifier": "1234567",
+       "mediationEvent": "infonova.provisioning.items",
+       "mediationFeed": "infonova.items",
+       "localStartTime": "2018-05-07T16:45:00.580",
+       "sessionInfo": "some_info",
+       "type": "eventBased",
+       "quantity": 120,
+       "measuringUnit": "EVENT",
+       "parameters": { }
+      }
+    ]
+}'
+
+-------------
+Response received:
+
+200 OK
+{
+    "validationErrors": []
+}
